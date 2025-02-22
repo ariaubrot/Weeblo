@@ -8,7 +8,7 @@ export const getAnimeInfo = async (id) => {
 
   try {
     const resp = await fetch(
-      `${process.env.NEXT_PUBLIC_ANIWATCH_URL}/api/v2/hianime/anime/${id}`,
+      `https://aniwatch-api-piya.vercel.app/api/v2/hianime/anime/${id}`,
       {
         next: {
           revalidate: 60 * 60 * 24,
