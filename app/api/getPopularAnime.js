@@ -2,7 +2,7 @@
 export const getPopularAnime = async () => {
     
     const resp = await fetch(
-      `https://api.jikan.moe/v4/top/anime`,
+      `https://wajik-anime-api.vercel.app/samehadaku/popular`,
       {
         next: {
           revalidate: 60 * 60 * 24,
