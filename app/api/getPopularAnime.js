@@ -2,7 +2,7 @@
 export const getPopularAnime = async () => {
     
     const resp = await fetch(
-      `https://kitsu.app/api/edge/trending/anime`,
+      `https://kitsu.app/api/edge/anime`,
       {
         next: {
           revalidate: 60 * 60 * 24,
