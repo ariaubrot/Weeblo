@@ -2,7 +2,7 @@
 export const getPopularAnime = async () => {
     
     const resp = await fetch(
-      `https://kitsu.app/api/edge/anime`,
+      `https://api.jikan.moe/v4/top/anime`,
       {
         next: {
           revalidate: 60 * 60 * 24,
